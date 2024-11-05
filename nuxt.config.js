@@ -42,6 +42,10 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   ssr: true,
   target: 'server',
+   server: {
+    port: process.env.PORT || 3000, 
+    host: '0.0.0.0',
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     'cookie-universal-nuxt',
